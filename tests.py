@@ -19,11 +19,12 @@ class TestBooksCollector:
         collector.add_new_book('Что делать, если ваш кот хочет вас убить')
 
         # проверяем, что добавилось именно две
-        # словарь books_rating, который нам возвращает метод get_books_rating, имеет длину 2
-        assert len(collector.get_books_rating()) == 2
+        # словарь books_genre, который нам возвращает метод add_new_book, имеет длину 2
+        assert len(BooksCollector().books_genre) == 2
 
     # напиши свои тесты ниже
     # чтобы тесты были независимыми в каждом из них создавай отдельный экземпляр класса BooksCollector()
+
     @pytest.mark.parametrize('new_book',
                              ['Harry Potter', '123456789_123456789_123456789_1234567890']
                              )
