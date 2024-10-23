@@ -19,7 +19,7 @@ class TestBooksCollector:
         collector.add_new_book('Что делать, если ваш кот хочет вас убить')
 
         # проверяем, что добавилось именно две
-        # словарь books_genre, который нам возвращает метод add_new_book, имеет длину 2
+        # словарь books_genre, который нам возвращает  add_new_book, имеет длину 2
         assert len(BooksCollector().books_genre) == 2
 
     # напиши свои тесты ниже
